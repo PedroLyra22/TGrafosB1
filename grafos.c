@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,7 +12,7 @@ struct node
 // newNode() allocates a new node
 // with the given data and NULL left
 // and right pointers.
-struct node *newNode(int data)
+struct node* newNode(int data)
 {
     printf("%d", data);
     // Allocate memory for new node
@@ -25,6 +26,18 @@ struct node *newNode(int data)
     node->left = NULL;
     node->right = NULL;
     return (node);
+}
+
+struct node* insertNoOrdenado(node* root, int valor)
+{
+    if (root == NULL){
+        root = newNode(valor);
+        return root;
+    }
+
+    
+
+
 }
 
 int main()
